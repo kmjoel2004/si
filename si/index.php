@@ -1162,48 +1162,7 @@ $user_type = $_SESSION['user_type'] ?? '';
     </section>
 
     <!-- Team Section -->
-    <section class="py-5 bg-light">
-        <div class="container">
-            <div class="row mb-5">
-                <div class="col-12 text-center">
-                    <h2 class="section-title">Our Leadership Team</h2>
-                    <p class="text-muted">Meet the experts guiding our vision</p>
-                </div>
-            </div>
-            <div class="row g-4">
-                <div class="col-md-4">
-                    <div class="card border-0 shadow-sm text-center p-4">
-                        <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80"
-                            alt="CEO" class="rounded-circle mx-auto mb-3"
-                            style="width: 150px; height: 150px; object-fit: cover;">
-                        <h4 class="mb-2">Robert Chen</h4>
-                        <p class="text-muted mb-3">CEO & Founder</p>
-                        <p class="small text-muted">20+ years in tech education and corporate training</p>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="card border-0 shadow-sm text-center p-4">
-                        <img src="https://images.unsplash.com/photo-1580489944761-15a19d654956?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80"
-                            alt="CTO" class="rounded-circle mx-auto mb-3"
-                            style="width: 150px; height: 150px; object-fit: cover;">
-                        <h4 class="mb-2">Sarah Williams</h4>
-                        <p class="text-muted mb-3">Chief Technology Officer</p>
-                        <p class="small text-muted">Former Google engineer, passionate about tech education</p>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="card border-0 shadow-sm text-center p-4">
-                        <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80"
-                            alt="Head of Training" class="rounded-circle mx-auto mb-3"
-                            style="width: 150px; height: 150px; object-fit: cover;">
-                        <h4 class="mb-2">Michael Rodriguez</h4>
-                        <p class="text-muted mb-3">Head of Training</p>
-                        <p class="small text-muted">15+ years experience in corporate training and development</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+
 
     <?php elseif ($page == 'services'): ?>
     <!-- Our Services Page Content -->
@@ -1747,7 +1706,6 @@ $user_type = $_SESSION['user_type'] ?? '';
                     <h5 class="text-white mb-4">Contact Info</h5>
                     <div class="onelap">
                         <ul class="list-unstyled text-light lap">
-                            <li class="mb-2"><i class="bi bi-geo-alt me-2"></i> 123 Tech Street, City, State 12345</li>
                             <li class="mb-2">
                                 <i class="bi bi-telephone me-2"></i>
                                 <a href="tel:+918077673418" class="text-light text-decoration-none">8077673418</a>

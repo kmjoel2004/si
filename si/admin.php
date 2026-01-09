@@ -16,7 +16,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $conn = getDBConnection();
     
     // Check default admin first
-    if ($email === "admin@aspironet.com" && $password === "admin123") {
+    if ($email === "admin@aspironet.in" && $password === "dheeraj@236") {
         $_SESSION['admin_logged_in'] = true;
         $_SESSION['admin_id'] = 1;
         $_SESSION['admin_name'] = "Administrator";
@@ -166,7 +166,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                     <div class="input-group">
                         <span class="input-group-text"><i class="bi bi-envelope"></i></span>
                         <input type="email" class="form-control" id="email" name="email"
-                            placeholder="admin@aspironet.com" required>
+                            placeholder="admin@aspironet.in" required>
                     </div>
                 </div>
                 <div class="mb-4">
@@ -183,9 +183,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             </form>
 
             <div class="admin-info">
-                <h6><i class="bi bi-info-circle me-2"></i>Default Admin Credentials</h6>
-                <p class="mb-1"><strong>Email:</strong> admin@aspironet.com</p>
-                <p class="mb-0"><strong>Password:</strong> admin123</p>
+                <h6><i class="bi bi-info-circle me-2"></i>Example</h6>
+                <p class="mb-1"><strong>Email:</strong> admin@aspironet.in</p>
+                <p class="mb-0"><strong>Password:</strong> admin@123</p>
             </div>
 
             <div class="text-center mt-4">
