@@ -1,0 +1,178 @@
+/* XAMPP Specific Styles */
+:root {
+    --primary: #2c3e50;
+    --secondary: #3498db;
+    --success: #2ecc71;
+    --warning: #f39c12;
+    --danger: #e74c3c;
+    --light: #f8f9fa;
+    --dark: #2c3e50;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding-top: 56px; /* For fixed navbar */
+}
+
+/* Navigation */
+.navbar {
+    box-shadow: 0 2px 4px rgba(0,0,0,.1);
+    background: white !important;
+}
+
+.navbar-brand {
+    font-weight: 700;
+    color: var(--primary) !important;
+}
+
+/* Hero Section */
+.hero-section {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+
+/* Cards */
+.card {
+    border: none;
+    box-shadow: 0 2px 4px rgba(0,0,0,.1);
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0,0,0,.1);
+}
+
+/* Buttons */
+.btn {
+    border-radius: 25px;
+    padding: 10px 25px;
+    font-weight: 500;
+}
+
+.btn-primary {
+    background: var(--secondary);
+    border-color: var(--secondary);
+}
+
+.btn-primary:hover {
+    background: #2980b9;
+    border-color: #2980b9;
+}
+
+/* Forms */
+.form-control, .form-select {
+    padding: 12px;
+    border-radius: 8px;
+}
+
+.form-control:focus, .form-select:focus {
+    border-color: var(--secondary);
+    box-shadow: 0 0 0 0.25rem rgba(52, 152, 219, 0.25);
+}
+
+/* Testimonial Cards */
+.testimonial-card {
+    border-left: 4px solid var(--secondary);
+    background: white;
+}
+
+.avatar-circle {
+    width: 50px;
+    height: 50px;
+    background: var(--secondary);
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+/* Course Cards */
+.course-card {
+    height: 100%;
+    border: 1px solid #e9ecef;
+}
+
+.course-card .card-footer {
+    background: transparent;
+    border-top: 1px solid #e9ecef;
+}
+
+/* Section Titles */
+.section-title {
+    position: relative;
+    padding-bottom: 15px;
+    margin-bottom: 30px;
+}
+
+.section-title:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 60px;
+    height: 3px;
+    background: var(--secondary);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .hero-section {
+        padding: 60px 0 !important;
+    }
+    
+    .display-4 {
+        font-size: 2rem;
+    }
+    
+    .btn-lg {
+        padding: 8px 20px;
+    }
+}
+
+/* Admin Styles */
+.sidebar {
+    background: var(--primary);
+    min-height: 100vh;
+}
+
+/* Footer */
+footer {
+    background: var(--dark);
+    color: white;
+}
+
+footer a {
+    color: #ddd;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: white;
+    text-decoration: underline;
+}
+
+/* Utility Classes */
+.rounded-lg {
+    border-radius: 15px;
+}
+
+.shadow-sm {
+    box-shadow: 0 2px 4px rgba(0,0,0,.1);
+}
+
+.shadow-lg {
+    box-shadow: 0 5px 15px rgba(0,0,0,.1);
+}
+
+/* Animation */
+.fade-in {
+    animation: fadeIn 0.5s ease-in;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
